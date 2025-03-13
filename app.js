@@ -31,6 +31,22 @@ const products = [
   }
 ];
 
+const logToFile = (message, data = '') => {
+  const timestamp = new Date().toLocaleString('tr-TR', {
+    timeZone: 'Europe/Istanbul',
+    day: '2-digit',
+    month: '2-digit',
+    year: 'numeric',
+    hour: '2-digit',
+    minute: '2-digit',
+    second: '2-digit',
+    hour12: false,
+  }).replace(',', '');
+
+  const logMessage = `[${timestamp}] ${message} ${data}\n`;
+  fs.appendFileSync('log.txt', logMessage);
+};
+
 const sendSMS = async (message, phoneNumbers) => {
   try {
     const smsPacket = xmlbuilder.create('smspack')
@@ -38,8 +54,8 @@ const sendSMS = async (message, phoneNumbers) => {
       .att('pwd', password)
       .att('org', originator)
       .ele('mesaj')
-        .ele('metin').txt(message).up()
-        .ele('nums').txt(phoneNumbers.join(',')).up()
+      .ele('metin').txt(message).up()
+      .ele('nums').txt(phoneNumbers.join(',')).up()
       .end({ pretty: true });
 
     const response = await axios.post(SMS_URL, smsPacket, {
@@ -75,7 +91,7 @@ app.get('/check-stock', async (req, res) => {
       await sleep(3000);
 
       const addToCartButtonSelector = 'button.zds-button.product-detail-size-selector-std-actions__button.zds-button--secondary.zds-button--large';
-      await page.waitForSelector(addToCartButtonSelector); 
+      await page.waitForSelector(addToCartButtonSelector);
       await page.click(addToCartButtonSelector);
 
       await sleep(3000);
