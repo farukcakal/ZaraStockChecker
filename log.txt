@@ -1,0 +1,5 @@
+[13.03.2025 23:50:51] URL ziyaret edildi: https://www.zara.com/tr/tr/cepli-yelek-zw-collection-p02446797.html 
+[13.03.2025 23:50:57] https://www.zara.com/tr/tr/cepli-yelek-zw-collection-p02446797.html stok durumu: {"L":"Stokta yok"}
+[13.03.2025 23:51:06] URL ziyaret edildi: https://www.zara.com/tr/tr/kisa-ispanyol-paca-pantolon-zw-koleksiyonu-p02514797.html 
+[13.03.2025 23:51:12] https://www.zara.com/tr/tr/kisa-ispanyol-paca-pantolon-zw-koleksiyonu-p02514797.html stok durumu: {"XL":"Stokta yok"}
+[13.03.2025 23:51:15] SMS gönderim sonucu: $470601707#1.0
