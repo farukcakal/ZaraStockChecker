@@ -43,10 +43,10 @@ This project is a Zara Stock Tracking and SMS Notification System built with Pup
 
     ```
     PORT=3000
-    SMS_URL=YOUR_SMS_API_URL
-    USERNAME=YOUR_SMS_API_USERNAME
-    PASSWORD=YOUR_SMS_API_PASSWORD
-    ORIGINATOR=YOUR_SENDER_NAME
+    SMS_URL=https://smsgw.mutlucell.com/smsgw-ws/sndblkex
+    USERNAME=MUTLUCELL_USERNAME
+    PASSWORD=MUTLUCELL_PASSWORD
+    ORIGINATOR=MUTLUCELL_ORIGINATOR
     PHONE_NUMBERS=+1234567890,+0987654321
     ```
 
