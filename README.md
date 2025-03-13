@@ -24,7 +24,7 @@ This project is a Zara Stock Tracking and SMS Notification System built with Pup
 1.  Clone the repository:
 
     ```bash
-    git clone [https://github.com/your-repo-name/zara-stock-checker.git](https://github.com/your-repo-name/zara-stock-checker.git)
+    git clone https://github.com/farukcakal/ZaraStockChecker.git
     ```
 
 2.  Navigate to project directory:
